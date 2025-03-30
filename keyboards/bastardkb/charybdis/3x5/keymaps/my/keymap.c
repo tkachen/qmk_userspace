@@ -135,7 +135,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 
 // 4 POINTER + HR MODS
 // ╭─────┬─────┬─────┬─────┬─────╮                        ╭─────┬─────┬─────┬─────┬─────╮
-// │ ESC │     │     │     │     │                        │     │     │     │     │BOOT │
+// │ ESC │     │     │     │     │                        │     │     │     │EECLR│QBOOT│
 // ├─────┼─────┼─────┼─────┼─────┤                        ├─────┼─────┼─────┼─────┼─────┤
 // │ GUI │ ALT │ CTL │ SFT │ BT4 │                        │ BT4 │ SFT │ CTL │ ALT │ GUI │
 // ├─────┼─────┼─────┼─────┼─────┤                        ├─────┼─────┼─────┼─────┼─────┤
@@ -144,7 +144,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 //                      │ BT3 │ BT2 │ BT1 │      │ --- │ --- │
 //                      ╰─────┴─────┴─────╯      ╰─────┴─────╯
 #define LAYOUT_LAYER_POINTER \
-    KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT, \
+    KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX, EE_CLR,  QK_BOOT, \
     KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_BTN4,        KC_BTN4, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, \
     _______, DRGSCRL, XXXXXXX, XXXXXXX, KC_BTN5,        KC_BTN5, KC_BTN1, KC_BTN2, KC_BTN3, _______, \
                       KC_BTN3, KC_BTN2, KC_BTN1,        _______, _______                                                            \
