@@ -131,6 +131,7 @@ static uint16_t auto_pointer_layer_timer = 0;
     KC_ESC,  KC_NO,   KC_NO,   KC_NO,   KC_NO,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
     KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_APP,        XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, \
     C(KC_Z), C(KC_X), C(KC_C), C(KC_V), C(KC_Y),       XXXXXXX, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  \
+                      _______, _______, _______,       _______, _______
 
 // 4 POINTER + HR MODS
 // ╭─────┬─────┬─────┬─────┬─────╮                        ╭─────┬─────┬─────┬─────┬─────╮
