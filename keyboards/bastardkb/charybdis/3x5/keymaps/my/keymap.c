@@ -55,6 +55,8 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define ESC_SWT LT(LAYER_SWITCH, KC_ESC)
 #define _L_PTR(KC) LT(LAYER_POINTER, KC)
 
+#define MIC_MUTE G(A(KC_K)) // Mute microphone, Windows 11 shortcut
+
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
 #    define DPI_MOD KC_NO
