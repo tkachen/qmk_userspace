@@ -135,7 +135,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 
 // 4 POINTER + HR MODS
 // ╭─────┬─────┬─────┬─────┬─────╮                        ╭─────┬─────┬─────┬─────┬─────╮
-// │ ESC │     │     │     │     │                        │     │     │     │     │     │
+// │ ESC │     │     │     │     │                        │     │     │     │     │BOOT │
 // ├─────┼─────┼─────┼─────┼─────┤                        ├─────┼─────┼─────┼─────┼─────┤
 // │ GUI │ ALT │ CTL │ SFT │ BT4 │                        │ BT4 │ SFT │ CTL │ ALT │ GUI │
 // ├─────┼─────┼─────┼─────┼─────┤                        ├─────┼─────┼─────┼─────┼─────┤
@@ -144,7 +144,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 //                      │ BT3 │ BT2 │ BT1 │      │ --- │ --- │
 //                      ╰─────┴─────┴─────╯      ╰─────┴─────╯
 #define LAYOUT_LAYER_POINTER \
-    KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+    KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT, \
     KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_BTN4,        KC_BTN4, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, \
     _______, DRGSCRL, XXXXXXX, XXXXXXX, KC_BTN5,        KC_BTN5, KC_BTN1, KC_BTN2, KC_BTN3, _______, \
                       KC_BTN3, KC_BTN2, KC_BTN1,        _______, _______                                                            \
@@ -199,7 +199,7 @@ RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, XXXXXXX,        KC_MPLY, KC_MRWD,  KC_MPRV, 
 
 // 8 SWITCH
 // ╭─────┬─────┬─────┬─────┬─────╮                        ╭─────┬─────┬─────┬─────┬─────╮
-// │ ESC │     │     │     │WASD │                        │     │     │     │     │BOOT │
+// │ ESC │     │     │     │WASD │                        │     │     │     │     │     │
 // ├─────┼─────┼─────┼─────┼─────┤                        ├─────┼─────┼─────┼─────┼─────┤
 // │ GUI │ ALT │ CTL │ SFT │QWERT│                        │     │     │     │     │     │
 // ├─────┼─────┼─────┼─────┼─────┤                        ├─────┼─────┼─────┼─────┼─────┤
@@ -208,7 +208,7 @@ RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, XXXXXXX,        KC_MPLY, KC_MRWD,  KC_MPRV, 
 //                      │ --- │     │     │      │     │     │
 //                      ╰─────┴─────┴─────╯      ╰─────┴─────╯
 #define LAYOUT_LAYER_SWITCH \
-  KC_ESC,    XXXXXXX,   XXXXXXX,   XXXXXXX,   DF(LAYER_GAME_WASD),      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT, \
+  KC_ESC,    XXXXXXX,   XXXXXXX,   XXXXXXX,   DF(LAYER_GAME_WASD),      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
   KC_LGUI,   KC_LALT,   KC_LCTL,   KC_LSFT,   DF(LAYER_GAME_QWERT),     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
   G(KC_TAB), A(KC_TAB), C(KC_TAB), S(KC_TAB), DF(LAYER_BASE),           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
                                         _______, XXXXXXX, XXXXXXX,      XXXXXXX, XXXXXXX
