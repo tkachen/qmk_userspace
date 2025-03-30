@@ -27,7 +27,7 @@ enum charybdis_keymap_layers {
     LAYER_NAVIGATION = 3,
     LAYER_POINTER = 4,
     LAYER_MEDIA = 5,
-    LAYER_GAME_WASD = 6
+    LAYER_GAME_WASD = 6,
     LAYER_GAME_QWERT = 7,
     LAYER_SWITCH = 8,
 };
